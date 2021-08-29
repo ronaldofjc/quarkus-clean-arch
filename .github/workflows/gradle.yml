@@ -46,5 +46,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          path: src/main/docker
+          context: ./src/main/docker
+          file: ./src/main/docker/Dockerfile
           tags: user/app:latest
