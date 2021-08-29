@@ -46,6 +46,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: Dockerfile.jvm
+          file: Dockerfile
           push: true
           tags: ronaldofjc/quarkus-clean-arch:latest
